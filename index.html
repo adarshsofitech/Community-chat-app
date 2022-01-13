@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="shortcut icon" href="/static/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="/static/CSS/phone.css">
+</head>
+<body>
+    <nav id="nav">
+        <img id = "logo" src="/static/img/icon.png" alt="ChatApp">
+    </nav>
+    <div class="container">
+        <!-- <div class="message left">Adarsh: helloo how are you</div>
+        <div class="message right">kumar: fine what about you</div> -->
+    </div> 
+    <div id="send" >
+        <form action="#" id="send-container">
+            <input type="text" name="msginput" id="msginput">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+    <audio src="/static/js/tone.mp3" id="myaudio"></audio>
+</body>
+<script src="https://icommunitychat.heroku.com/socket.io/socket.io.js"></script>
+    <script  src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script  src = "/static/js/client.js"></script>
+</html>

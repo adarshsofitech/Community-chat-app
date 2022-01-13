@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+#container{
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 90vh;
+}
+
+#container::before{
+content: "";
+background: url("/static/img/bg1.jpg") no-repeat center center/cover;
+position: fixed;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+z-index: -1;
+
+
+}
+
+#box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#box h1{
+
+    color: rgb(8, 8, 8);
+    font-size: 60px;
+    font-weight: bolder;
+    margin: 16px 22px;
+    margin-bottom: 130px;
+
+
+}
+#box input{
+    padding: 7px 11px;
+    margin: 9px 24px;
+    border: none;
+    border-bottom: 3px solid purple;
+    font-size: 15px;
+    width: 300px;
+    outline: none;
+    margin-left: 9px;
+    background: none;
+    color: rgb(116, 110, 110);
+
+}
+
+.btn{
+   
+    margin: 8px 131px;
+    padding: 6px 16px;
+    color: white;
+    font-size: 17px;
+    border-radius: 21px;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: 2px solid purple;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.btn:hover{
+   background-color: white;
+   color: purple; 
+}
+
+#logo i{
+    margin: 0px 0px;
+}
+
+.fa-github:before {
+    content: "\f09b";
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+#logo{
+   margin-top: 20px;
+   cursor: pointer; 
+}
+
+#logo i:hover{
+    background-color: #837979;
+}
+
+#chat{
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+}
